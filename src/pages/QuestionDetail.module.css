@@ -1,0 +1,166 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete {
+  width: 10vw;
+  padding: 10px;
+  margin-left: 10%;
+}
+.question {
+  letter-spacing: 2px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+}
+
+.back-btn {
+  background: none;
+  border: 0;
+  position: relative;
+  height: 60px;
+  width: 60px;
+}
+
+.top-left {
+  display: block;
+  position: absolute;
+  height: 0.2rem;
+  width: 1.2rem;
+  background: white;
+  border-radius: 0.2rem;
+  z-index: 2;
+  opacity: 1;
+  left: 50%;
+  transform: rotate(45deg);
+  top: 2.4rem;
+  margin-left: -1rem;
+}
+.top-right {
+  display: block;
+  position: absolute;
+  height: 0.2rem;
+  width: 1.2rem;
+  background: white;
+  border-radius: 0.2rem;
+  z-index: 2;
+  opacity: 1;
+  left: 50%;
+  transform: rotate(135deg);
+  top: 2.4rem;
+  margin-left: -0.2rem;
+}
+.bottom-left {
+  display: block;
+  position: absolute;
+  height: 0.2rem;
+  width: 1.2rem;
+  background: white;
+  border-radius: 0.2rem;
+  z-index: 2;
+  opacity: 1;
+  left: 50%;
+  transform: rotate(135deg);
+  top: 3.2rem;
+  margin-left: -1rem;
+}
+.bottom-right {
+  display: block;
+  position: absolute;
+  height: 0.2rem;
+  width: 1.2rem;
+  background: white;
+  border-radius: 0.2rem;
+  z-index: 2;
+  opacity: 1;
+  left: 50%;
+  transform: rotate(45deg);
+  top: 3.2rem;
+  margin-left: -0.2rem;
+}
+.stalk {
+  display: block;
+  position: absolute;
+  height: 0.2rem;
+  width: 1.2rem;
+  background: white;
+  border-radius: 0.2rem;
+  z-index: 2;
+  opacity: 1;
+  left: 50%;
+  top: 2.8rem;
+  width: 2rem;
+  opacity: 0;
+}
+
+.text {
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  bottom: 0.1rem;
+  left: 50%;
+  margin-left: -1.7rem;
+  opacity: 0;
+}
+
+.back-btn .top-left {
+  transition: opacity 0.3s 1s;
+}
+
+.back-btn .bottom-left {
+  transition: opacity 0.3s 1s;
+}
+
+.back-btn .top-right {
+  transition: opacity 0.5s 0.5s;
+}
+
+.back-btn .bottom-right {
+  transition: opacity 0.5s 0.5s;
+}
+
+.back-btn .stalk {
+  transition: margin-left 0.5s 0.5s, opacity 0.3s 1s;
+}
+
+.back-btn .text {
+  transition: opacity 0.3s 1s;
+}
+
+.back-btn:hover .text {
+  opacity: 1;
+  transition: opacity 0.3s 0.5s;
+}
+
+.back-btn:hover .top-left {
+  opacity: 0;
+  transition: opacity 0.3s 0.5s;
+}
+
+.back-btn:hover .bottom-left {
+  opacity: 0;
+  transition: opacity 0.3s 0.5s;
+}
+
+.back-btn:hover .top-right {
+  margin-left: -1.3rem;
+  transition: margin-left 0.5s 0.8s;
+}
+
+.back-btn:hover .bottom-right {
+  margin-left: -1.3rem;
+  transition: margin-left 0.5s 0.8s;
+}
+
+.back-btn:hover .stalk {
+  opacity: 1;
+  margin-left: -1.2rem;
+  transition: margin-left 0.5s 0.8s, opacity 0.3s 0.5s;
+}

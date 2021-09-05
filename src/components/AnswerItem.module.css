@@ -1,0 +1,24 @@
+.answer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50vw;
+
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 12px;
+  margin: 10px auto;
+  backdrop-filter: blur(10px);
+}
+
+.delete {
+  border: none;
+  background-color: rgba(255, 88, 88, 0.6);
+  padding: 5px 10px;
+  font-size: 10px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 10px;
+}
